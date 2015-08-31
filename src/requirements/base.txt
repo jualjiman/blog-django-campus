@@ -3,7 +3,9 @@ Django==1.8.4
 psycopg2>=2.6,<2.7
 
 # Packages
+Pillow==2.6.1
 ipython
 django-extensions
 Werkzeug
 django-bower>=5.0,<5.1
+sorl-thumbnail==12.3

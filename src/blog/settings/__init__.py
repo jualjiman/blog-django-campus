@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'sorl.thumbnail',
     'blog.post',
 )
 
@@ -85,6 +86,11 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.realpath(
     os.path.join(BASE_DIR, '..', '..', 'media', 'assets')
+)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.realpath(
+    os.path.join(BASE_DIR, '..', '..', 'media', 'uploads')
 )
 
 

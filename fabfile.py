@@ -159,9 +159,12 @@ def bootstrap():
     # Build the DB schema and collect the static files.
     createdb()
     migrate()
+
     if project_conf['tools']['bower']:
         bower_install()
+
     collectstatic()
+    createsuperuser()
 
 
 @task
